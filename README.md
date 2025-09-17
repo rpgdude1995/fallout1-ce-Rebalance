@@ -9,11 +9,17 @@ Most of the games changes will be simple source code modifications, not complica
 # Estimated Project Completion Status
 
 S.P.E.C.I.A.L.    0%
+
 Traits            0%
+
 Perks             0%
+
 Skills            0%
+
 Weapons           0%
+
 Armor             0%
+
 General           0%
 
 ## License
