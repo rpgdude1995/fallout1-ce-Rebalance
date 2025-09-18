@@ -325,13 +325,13 @@ int trait_adjust_skill(int skill)
         case SKILL_UNARMED:
         case SKILL_MELEE_WEAPONS:
         case SKILL_THROWING:
-            modifier -= 10;
+            modifier -= 35;
             break;
         case SKILL_FIRST_AID:
         case SKILL_DOCTOR:
         case SKILL_SPEECH:
         case SKILL_BARTER:
-            modifier += 15;
+            modifier += 45;
             break;
         }
     }
