@@ -419,6 +419,18 @@ void stat_recalc_derived(Object* critter)
     data->baseStats[STAT_BETTER_CRITICALS] = 0;
     data->baseStats[STAT_RADIATION_RESISTANCE] = 2 * endurance;
     data->baseStats[STAT_POISON_RESISTANCE] = 5 * endurance;
+    data->baseStats[STAT_DAMAGE_THRESHOLD] = endurance - 6;
+    data->baseStats[STAT_DAMAGE_RESISTANCE] = endurance / 2;
+    data->baseStats[STAT_DAMAGE_THRESHOLD_LASER] = endurance - 7;
+    data->baseStats[STAT_DAMAGE_RESISTANCE_LASER] = endurance / 2;
+    data->baseStats[STAT_DAMAGE_THRESHOLD_FIRE] = endurance - 7;
+    data->baseStats[STAT_DAMAGE_RESISTANCE_FIRE] = endurance / 2;
+    data->baseStats[STAT_DAMAGE_THRESHOLD_PLASMA] = endurance - 9;
+    data->baseStats[STAT_DAMAGE_RESISTANCE_PLASMA] = endurance / 3;
+    data->baseStats[STAT_DAMAGE_THRESHOLD_ELECTRICAL] = endurance - 7;
+    data->baseStats[STAT_DAMAGE_RESISTANCE_ELECTRICAL] = endurance / 2;
+    data->baseStats[STAT_DAMAGE_THRESHOLD_EXPLOSION] = endurance - 7;
+    data->baseStats[STAT_DAMAGE_RESISTANCE_EXPLOSION] = endurance - 8;
 }
 
 // 0x49CA2C
@@ -603,7 +615,7 @@ int stat_pc_add_experience(int xp)
             gsound_play_sfx_file("levelup");
 
             // NOTE: Uninline.
-            hp = stat_get_base(obj_dude, STAT_ENDURANCE) / 2 + 2;
+            hp = stat_get_base(obj_dude, STAT_ENDURANCE) / 3 + 1;
             hp += perk_level(PERK_LIFEGIVER) * 4;
             critter_adjust_hits(obj_dude, hp);
 
