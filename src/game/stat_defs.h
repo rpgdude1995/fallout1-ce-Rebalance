@@ -7,7 +7,7 @@ namespace fallout {
 #define PRIMARY_STAT_MIN (1)
 
 // The maximum value of SPECIAL stat.
-#define PRIMARY_STAT_MAX (10)
+#define PRIMARY_STAT_MAX (99)
 
 // The number of values of SPECIAL stat.
 //
