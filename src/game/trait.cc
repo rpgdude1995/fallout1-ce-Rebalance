@@ -198,6 +198,13 @@ int trait_adjust_stat(int stat)
         if (trait_level(TRAIT_BRUISER)) {
             modifier += 2;
         }
+        if (trait_level(TRAIT_NIGHT_PERSON)) {
+            if (game_time_hour() - 600 < 1200) {
+                modifier -= 1;
+            } else {
+                modifier += 2;
+            }
+        }
         break;
     case STAT_PERCEPTION:
         if (trait_level(TRAIT_GIFTED)) {
@@ -207,7 +214,7 @@ int trait_adjust_stat(int stat)
             if (game_time_hour() - 600 < 1200) {
                 modifier -= 1;
             } else {
-                modifier += 1;
+                modifier += 2;
             }
         }
         break;
@@ -229,7 +236,7 @@ int trait_adjust_stat(int stat)
             if (game_time_hour() - 600 < 1200) {
                 modifier -= 1;
             } else {
-                modifier += 1;
+                modifier += 2;
             }
         }
         break;
