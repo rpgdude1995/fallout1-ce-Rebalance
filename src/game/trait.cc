@@ -247,13 +247,14 @@ int trait_adjust_stat(int stat)
         }
         break;
     case STAT_MAXIMUM_ACTION_POINTS:
-        if (trait_level(TRAIT_BRUISER)) {
-            modifier -= 2;
-        }
+        
         break;
     case STAT_ARMOR_CLASS:
         if (trait_level(TRAIT_KAMIKAZE)) {
             modifier -= stat_get_base_direct(obj_dude, STAT_ARMOR_CLASS);
+        }
+        if (trait_level(TRAIT_BRUISER)) {
+            modifier -= 3;
         }
         break;
     case STAT_MELEE_DAMAGE:
