@@ -409,7 +409,7 @@ void stat_recalc_derived(Object* critter)
     CritterProtoData* data = &(proto->critter.data);
 
     data->baseStats[STAT_MAXIMUM_HIT_POINTS] = stat_get_base(critter, STAT_STRENGTH) + stat_get_base(critter, STAT_ENDURANCE) * 2 + 15;
-    data->baseStats[STAT_MAXIMUM_ACTION_POINTS] = agility / 2 + 5;
+    data->baseStats[STAT_MAXIMUM_ACTION_POINTS] = (agility -1) / 3 + 8;
     data->baseStats[STAT_ARMOR_CLASS] = agility;
     data->baseStats[STAT_MELEE_DAMAGE] = std::max(strength - 5, 1);
     data->baseStats[STAT_CARRY_WEIGHT] = 25 * strength + 25;
