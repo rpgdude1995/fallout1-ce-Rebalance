@@ -219,6 +219,112 @@ static bool perk_can_add(int perk)
         }
     }
 
+    //perks blacklist
+    if (perk == PERK_RAD_RESISTANCE)
+    {
+        return false;            
+    }
+    if (perk == PERK_SNAKEATER)
+    {
+        return false;            
+    }
+    if (perk == PERK_ANIMAL_FRIEND)
+    {
+        return false;            
+    }
+    if (perk == PERK_SCOUT)
+    {
+        return false;            
+    }
+    if (perk == PERK_SURVIVALIST)
+    {
+        return false;            
+    }
+    if (perk == PERK_FORTUNE_FINDER)
+    {
+        return false;            
+    }
+    if (perk == PERK_PATHFINDER)
+    {
+        return false;            
+    }
+    if (perk == PERK_PATHFINDER)
+    {
+        return false;            
+    }
+    if (perk == PERK_RANGER)
+    {
+        return false;            
+    }
+    if (perk == PERK_EXPLORER)
+    {
+        return false;            
+    }
+    if (perk == PERK_SCROUNGER)
+    {
+        return false;            
+    }
+    if (perk == PERK_MASTER_THIEF)
+    {
+        return false;            
+    }
+    if (perk == PERK_MASTER_TRADER)
+    {
+        return false;            
+    }
+    if (perk == PERK_MEDIC)
+    {
+        return false;            
+    }
+    if (perk == PERK_MR_FIXIT)
+    {
+        return false;            
+    }
+    if (perk == PERK_SPEAKER)
+    {
+        return false;            
+    }
+    if (perk == PERK_CULT_OF_PERSONALITY)
+    {
+        return false;            
+    }
+    if (perk == PERK_EMPATHY)
+    {
+        return false;            
+    }
+    if (perk == PERK_PRESENCE)
+    {
+        return false;            
+    }
+    if (perk == PERK_SMOOTH_TALKER)
+    {
+        return false;            
+    }
+    if (perk == PERK_FASTER_HEALING)
+    {
+        return false;            
+    }
+    if (perk == PERK_FLOWER_CHILD)
+    {
+        return false;            
+    }
+    if (perk == PERK_MENTAL_BLOCK)
+    {
+        return false;            
+    }
+    if (perk == PERK_STRONG_BACK)
+    {
+        return false;            
+    }
+    if (perk == PERK_SWIFT_LEARNER)
+    {
+        return false;            
+    }
+    if (perk == PERK_FRIENDLY_FOE)
+    {
+        return false;            
+    }
+
     return true;
 }
 
