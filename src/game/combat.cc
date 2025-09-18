@@ -3279,7 +3279,7 @@ static int determine_to_hit_func(Object* attacker, Object* defender, int hitLoca
                 if (item_w_is_2handed(weapon)) {
                     accuracy -= 40;
                 } else {
-                    accuracy += 20;
+                    accuracy += 35;
                 }
             }
         }
