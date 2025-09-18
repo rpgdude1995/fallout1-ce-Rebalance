@@ -251,7 +251,7 @@ int trait_adjust_stat(int stat)
         break;
     case STAT_ARMOR_CLASS:
         if (trait_level(TRAIT_KAMIKAZE)) {
-            modifier -= stat_get_base_direct(obj_dude, STAT_ARMOR_CLASS);
+            modifier -= 2;
         }
         if (trait_level(TRAIT_BRUISER)) {
             modifier -= 3;
