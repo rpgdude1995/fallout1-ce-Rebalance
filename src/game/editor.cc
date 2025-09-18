@@ -5225,6 +5225,9 @@ static int UpdateLevel()
                 if (trait_level(TRAIT_SKILLED)) {
                     progression += 1;
                 }
+                 if (trait_level(TRAIT_GIFTED)) {
+                    progression += 1;
+                }
 
                 if (nextLevel % progression == 0) {
                     free_perk = 1;
